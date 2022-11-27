@@ -1,9 +1,9 @@
 [package]
 name = "fls"
 version = "0.0.1"
-authors = ["heyo@devdao.com"]
+authors = ["FeLang Developers"]
 description = "Fe Language Server"
-repository = "https://github.com/developerdao/fls"
+repository = "https://github.com/fe-lang/fls"
 license = "Apache-2.0"
 edition = "2018"
 

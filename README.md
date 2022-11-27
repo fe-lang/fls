@@ -1,7 +1,4 @@
 <p align="center">
-    <a href="https://developerdao.com">
-    <img src="https://raw.githubusercontent.com/Developer-DAO/developerdao.com/main/public/logo512.png" alt="logo" width="80" height="80"/>
-    </a>
     <h2 align="center">FLS</h2>
     <p align="center">
     <a href="https://github.com/ethereum/fe">Fe</a> Language Server
@@ -28,13 +25,13 @@ rustup update
 Once you have rustup installed, run the following commands:
 
 ```
-cargo install --git https://github.com/Developer-DAO/fls.git
+cargo install --git https://github.com/fe-lang/fls.git
 ```
 
 ## Running
 
 The FLS is built to work with many IDEs and editors, we mostly use
-VSCode to test the FLS. The easiest way is to use the [published extension](https://github.com/Developer-DAO/vscode-fe).
+VSCode to test the FLS. The easiest way is to use the [published extension](https://github.com/fe-lang/vscode-fe).
 
 You'll know it's working when you see this in the status bar at the bottom, with
 a spinning indicator:
