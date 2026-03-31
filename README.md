@@ -1,50 +1,26 @@
+> **This project is deprecated.** The Fe language server is now built directly into the [`fe` CLI](https://github.com/fe-lang/fe) via the `fe lsp` subcommand. There is no longer a need for a standalone language server binary.
+>
+> For VS Code support, use the [vscode-fe](https://github.com/fe-lang/vscode-fe) extension, which integrates with the built-in language server automatically.
+>
+> To install Fe: visit [fe-lang.org](https://fe-lang.org)
+
+---
+
 <p align="center">
-    <h2 align="center">FLS</h2>
+    <h2 align="center">FLS (Deprecated)</h2>
     <p align="center">
-    <a href="https://github.com/ethereum/fe">Fe</a> Language Server
+    <a href="https://github.com/fe-lang/fe">Fe</a> Language Server
     </p>
 </p>
 
-The `FLS` is designed to be frontend-independent. We hope it will be widely adopted by different editors and IDEs.
+This repository contained the original standalone Fe language server. It has been superseded by the language server built into the Fe compiler itself.
 
-## Setup
+## Migration
 
-### Step 1: Install rustup
-
-You can install [rustup](http://rustup.rs/) on many platforms. This will help us quickly install the FLS and its dependencies.
-
-If you already have rustup installed, update to ensure you have the latest
-rustup and compiler:
-
-```
-rustup update
-```
-
-### Step 2: Install the FLS
-
-Once you have rustup installed, run the following commands:
-
-```
-cargo install --git https://github.com/fe-lang/fls.git
-```
-
-## Running
-
-The FLS is built to work with many IDEs and editors, we mostly use
-VSCode to test the FLS. The easiest way is to use the [published extension](https://github.com/fe-lang/vscode-fe).
-
-You'll know it's working when you see this in the status bar at the bottom, with
-a spinning indicator:
-
-`FLS: working ◐`
-
-Once you see:
-
-`FLS`
-
-Then you have the full set of capabilities available to you.  You can goto def, find all refs, rename, goto type, etc.
-Completions are also available.  As you type, your code will be checked and error squiggles will be reported when errors occur.
-You can hover these squiggles to see the text of the error.
+1. Install the Fe CLI from [fe-lang.org](https://fe-lang.org) or build from source at [github.com/fe-lang/fe](https://github.com/fe-lang/fe)
+2. The language server is available via `fe lsp`
+3. Install the [vscode-fe](https://marketplace.visualstudio.com/items?itemName=fe-language-team.vscode-fe) extension for VS Code integration
+4. The extension automatically discovers the `fe` binary and starts the language server
 
 ## License
 
